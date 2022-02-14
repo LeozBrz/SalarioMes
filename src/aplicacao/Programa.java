@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entidade.Departamento;
+import entidade.Trabalhador;
 
 public class Programa {
 
@@ -24,6 +25,8 @@ public class Programa {
 	double baseSal = sc.nextDouble();
 	System.out.print("QUANTIDADE DE CONTRATOS: ");	
 	int contratos = sc.nextInt();
+	
+	Trabalhador trab = new Trabalhador(nome,nivel,baseSal);
 	
 	System.out.printf("\nINSIRA O CONTRATO #1\n");
 	System.out.print("DATA: (DD/MM/AAAA): ");

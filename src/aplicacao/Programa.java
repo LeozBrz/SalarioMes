@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import entidade.Departamento;
 import entidade.Trabalhador;
+import entidades.enums.NivelTrabalhador;
 
 public class Programa {
 
@@ -15,7 +16,6 @@ public class Programa {
 	System.out.print("INSIRA O NOME DO DEPARTAMENTO: ");
 	String dep = sc.nextLine(); 
 	Departamento departamento = new Departamento(dep);
-	
 	System.out.printf("\nDADOS DO TRABALHADOR\n");
 	System.out.print("NOME: ");
 	String nome = sc.nextLine();
@@ -25,9 +25,6 @@ public class Programa {
 	double baseSal = sc.nextDouble();
 	System.out.print("QUANTIDADE DE CONTRATOS: ");	
 	int contratos = sc.nextInt();
-	
-	Trabalhador trab = new Trabalhador(nome,nivel,baseSal);
-	
 	System.out.printf("\nINSIRA O CONTRATO #1\n");
 	System.out.print("DATA: (DD/MM/AAAA): ");
 	String data = sc.next();
